@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Password Manager</string>
+    <string name="menu_settings">Settings</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="securityQuestion">Security Question</string>
+    <string name="enter">Enter</string>
+    <string name="register">Register</string>
+    
+    <string-array name="securityQuestions">
+        <item>In what city were you born?</item>
+        <item>What is the name of your pet?</item>
+        <item>What is the name of your best friend?</item>
+        <item>What is the middle name of your mother?</item>
+        <item>What is the middle name of your father?</item>
+        <item>What was the make of your first car?</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carbon_background"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity" >
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPassword"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textViewConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/confirmPassword"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_below="@+id/textViewConfirmPassword"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewSecurityQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextConfirmPassword"
+        android:layout_below="@+id/editTextConfirmPassword"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/securityQuestion"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+    
+    <Button
+        android:id="@+id/buttonRegister"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_green"
+        android:minHeight="20dip"
+        android:minWidth="30dip"
+        android:text="@string/register"
+        android:textColor="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/spinnerSecurityQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSecurityQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dropdown"
+        android:entries="@array/securityQuestions"
+        android:prompt="@string/securityQuestion" />
+
+</RelativeLayout>
