@@ -1,4 +1,4 @@
-// First check on Git
+// check for merge
 
 package com.ak.activities;
 
